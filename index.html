@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paradise Network - Share quotes anonymously. Explore the vibe, feel the energy.">
+    <meta name="keywords" content="quotes, paradise, anonymous posting, Sinhala quotes, English quotes">
+    <meta name="author" content="lilxhiruu">
+    <title>Paradise Network | Share Your Thoughts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark-mode.css">
+    <link rel="icon" href="PARADISE_LOGO.jpg" type="image/jpg">
+</head>
+<body class="dark-mode">
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav-menu" id="mobileNavMenu">
+        <button class="mobile-nav-close" id="mobileNavClose">
+            <i class="fas fa-times"></i>
+        </button>
+        <button class="mobile-nav-link active" data-tab="quotes-tab">
+            <i class="fas fa-quote-left"></i> Quotes
+        </button>
+        <button class="mobile-nav-link" data-tab="paradise-tab">
+            <i class="fas fa-island-tropical"></i> Paradise Zone
+        </button>
+        <div class="theme-toggle" style="margin-top: 30px; padding-left: 20px;">
+            <button class="theme-btn" id="mobileThemeToggle">
+                <i class="fas fa-moon"></i> Dark Mode
+            </button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo-container" id="logoLink">
+            <img src="PARADISE_LOGO.jpg" alt="Paradise Logo" class="logo-img" id="logoImage">
+            <div class="logo-text">Paradise <span class="butterfly">🦋</span></div>
+        </a>
+        
+        <nav class="main-nav">
+            <button class="nav-link active" data-tab="quotes-tab">Quotes</button>
+            <button class="nav-link" data-tab="paradise-tab">Paradise Zone</button>
+        </nav>
+        
+        <div class="theme-toggle">
+            <button class="theme-btn" id="themeToggle">
+                <i class="fas fa-moon"></i> Dark Mode
+            </button>
+        </div>
+        
+        <button class="mobile-nav-btn" id="mobileNavBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Quotes Tab -->
+        <section class="tab-content active" id="quotes-tab">
+            <h1 class="page-title">Recent Thoughts</h1>
+            <div id="quotesContainer" class="quotes-container">
+                <!-- Quotes will be loaded here dynamically -->
+            </div>
+            
+            <div id="emptyQuotes" class="empty-state" style="display: none;">
+                <i class="fas fa-quote-left" style="font-size: 3rem; margin-bottom: 20px; opacity: 0.3;"></i>
+                <h3>No quotes yet</h3>
+                <p>Be the first to share your thoughts! Click the + button to add a quote.</p>
+            </div>
+        </section>
+        
+        <!-- Paradise Zone Tab -->
+        <section class="tab-content" id="paradise-tab">
+            <img src="PARADISE_LOGO.jpg" alt="Paradise Network" class="paradise-logo-large">
+            <h1 class="tagline">𝙋𝘼𝙍𝘼𝘿𝙄𝙎𝙀 𝙉𝙚𝙩𝙬𝙤𝙧𝙠 😅</h1>
+            <p class="subtagline">Explore the vibe. Feel the energy. ✋</p>
+            
+            <div class="paradise-intro">
+                <p>Welcome to the Paradise Zone! Connect with our vibrant community across multiple channels. Each space offers unique content and experiences.</p>
+            </div>
+            
+            <div class="channels-container">
+                <div class="channel-card">
+                    <div class="channel-icon">🏝️</div>
+                    <h3 class="channel-title">PARADISE MAIN (H)</h3>
+                    <p class="channel-desc">The central hub for all Paradise Network announcements and main discussions.</p>
+                    <a href="https://t.me/paradise_main" target="_blank" class="join-btn">Join Channel</a>
+                </div>
+                
+                <div class="channel-card">
+                    <div class="channel-icon">😀</div>
+                    <h3 class="channel-title">PARADISE CHAT GROUP (H)</h3>
+                    <p class="channel-desc">Vibrant community chat for members to connect, share, and engage.</p>
+                    <a href="https://t.me/paradise_chat" target="_blank" class="join-btn">Join Group</a>
+                </div>
+                
+                <div class="channel-card">
+                    <div class="channel-icon">💸</div>
+                    <h3 class="channel-title">PARADISE EMONEY CLUB</h3>
+                    <p class="channel-desc">Financial discussions, e-money tips, and digital economy insights.</p>
+                    <a href="https://t.me/paradise_emoney" target="_blank" class="join-btn">Join Club</a>
+                </div>
+            </div>
+            
+            <div class="network-section">
+                <h2 class="network-title">Paradise Network Channels</h2>
+                
+                <div class="category">
+                    <h3 class="category-title"><span>💎</span> MAIN HUB</h3>
+                    <ul class="channel-list">
+                        <li class="channel-item">
+                            <span class="channel-badge h-badge">H</span>
+                            <a href="https://t.me/paradise_main" target="_blank" class="channel-link">🏝 PARADISE MAIN (H)</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="category">
+                    <h3 class="category-title"><span>💬</span> CHAT & COMMUNITY</h3>
+                    <ul class="channel-list">
+                        <li class="channel-item">
+                            <span class="channel-badge h-badge">H</span>
+                            <a href="https://t.me/paradise_chat" target="_blank" class="channel-link">😀 PARADISE CHAT GROUP (H)</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="category">
+                    <h3 class="category-title"><span>💸</span> E-MONEY CLUB</h3>
+                    <ul class="channel-list">
+                        <li class="channel-item">
+                            <a href="https://t.me/paradise_emoney" target="_blank" class="channel-link">😀 PARADISE EMONEY CLUB</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="category">
+                    <h3 class="category-title"><span>☕️</span> FOOD REVIEW</h3>
+                    <ul class="channel-list">
+                        <li class="channel-item">
+                            <span class="channel-badge h-badge">H</span>
+                            <a href="https://t.me/tasty_spoon" target="_blank" class="channel-link">🥂 THE TASTY SPOON (H)</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="category">
+                    <h3 class="category-title"><span>🌈</span> VIBE & LIFESTYLE</h3>
+                    <ul class="channel-list">
+                        <li class="channel-item">
+                            <span class="channel-badge n-badge">N</span>
+                            <a href="https://t.me/vivid_channel" target="_blank" class="channel-link">😀 VIVID (N)</a>
+                        </li>
+                        <li class="channel-item">
+                            <span class="channel-badge n-badge">N</span>
+                            <a href="https://t.me/girl_vibes" target="_blank" class="channel-link">🍭 GIRL VIBES (N)</a>
+                        </li>
+                        <li class="channel-item">
+                            <span class="channel-badge n-badge">N</span>
+                            <a href="https://t.me/lankan_om" target="_blank" class="channel-link">🌺 LANKAN OM (N)</a>
+                        </li>
+                        <li class="channel-item">
+                            <span class="channel-badge n-badge">N</span>
+                            <a href="https://t.me/honey_channel" target="_blank" class="channel-link">🌧 HONEY ꨄ︎ (N)</a>
+                        </li>
+                        <li class="channel-item">
+                            <span class="channel-badge n-badge">N</span>
+                            <a href="https://t.me/ceylon_vibes" target="_blank" class="channel-link">💋 CEYLON VIBES (N)</a>
+                        </li>
+                        <li class="channel-item">
+                            <span class="channel-badge n-badge">N</span>
+                            <a href="https://t.me/vibes_lk" target="_blank" class="channel-link">🔥 VIBES LK (N)</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="admin-info">
+                    <p><strong>Owner DM:</strong> @GirlsLife1_Bot</p>
+                    <p><strong>Co-Owner Updates:</strong> @JustHIRUU</p>
+                </div>
+            </div>
+            
+            <div class="paradise-footer">
+                <p>𝙋𝘼𝙍𝘼𝘿𝙄𝙎𝙀 ♡︎</p>
+                <p class="paradise-tagline">𝙒𝙝𝙚𝙧𝙚 𝙩𝙝𝙚 𝙑𝙞𝙗𝙚𝙨 𝙉𝙚𝙫𝙚𝙧 𝘿𝙞𝙚. 🌈</p>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Floating Add Button -->
+    <button class="add-btn" id="addQuoteBtn">
+        <i class="fas fa-plus"></i>
+    </button>
+    
+    <!-- Post Quote Modal -->
+    <div class="modal-overlay" id="quoteModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">Share Your Thought</h2>
+                <button class="close-btn" id="closeModalBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <form id="quoteForm">
+                <div class="form-group">
+                    <label for="quoteText" class="form-label">Your Quote *</label>
+                    <textarea 
+                        id="quoteText" 
+                        class="form-control" 
+                        placeholder="Write your quote here in any language (සිංහල, English, etc.)..." 
+                        required
+                        maxlength="500"
+                    ></textarea>
+                    <div class="form-hint">Maximum 500 characters</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="authorName" class="form-label">Author Name (Optional)</label>
+                    <input 
+                        type="text" 
+                        id="authorName" 
+                        class="form-control author-input" 
+                        placeholder="Leave empty to post as 'Unknown Author'"
+                        maxlength="50"
+                    >
+                    <div class="form-hint">If you don't provide a name, it will be published as "Unknown Author"</div>
+                </div>
+                
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Publish Quote
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#" class="footer-link" data-tab="quotes-tab">Quotes</a>
+            <a href="#" class="footer-link" data-tab="paradise-tab">Paradise Zone</a>
+            <a href="javascript:void(0)" class="footer-link" id="aboutBtn">About Project</a>
+        </div>
+        <p class="copyright">© 2025 Paradise Network. All rights reserved. | Created by lilxhiruu</p>
+        <p class="copyright">Final Year Project - Computer Science</p>
+    </footer>
+
+    <!-- About Modal -->
+    <div class="modal-overlay" id="aboutModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 class="modal-title">About This Project</h2>
+                <button class="close-btn" id="closeAboutBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h3>Paradise Network Website</h3>
+                <p><strong>Final Year Project - Computer Science</strong></p>
+                <p>This website is a complete anonymous quote sharing platform with:</p>
+                <ul>
+                    <li>No login system required</li>
+                    <li>Anonymous posting</li>
+                    <li>Like/Unlike functionality</li>
+                    <li>Dark/Light mode toggle</li>
+                    <li>Mobile responsive design</li>
+                    <li>Local storage for data persistence</li>
+                    <li>Multi-language support</li>
+                    <li>SEO optimized</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> HTML5, CSS3, JavaScript, LocalStorage API</p>
+                <p><strong>Developer:</strong> lilxhiruu</p>
+                <p><strong>For:</strong> Final Year Project Submission</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
