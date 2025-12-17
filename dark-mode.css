@@ -1,0 +1,158 @@
+/* Dark Mode Variables */
+.dark-mode {
+    --bg-color: #0f0f23;
+    --card-color: #1a1a2e;
+    --text-color: #e0e0e0;
+    --border-color: #2d2d4d;
+    --accent-color: #6a11cb;
+    --secondary-color: #1dd1a1;
+    --like-color: #ff4757;
+    --muted-color: #888;
+}
+
+/* Light Mode Variables */
+.light-mode {
+    --bg-color: #f5f5f7;
+    --card-color: #ffffff;
+    --text-color: #333333;
+    --border-color: #e1e1e6;
+    --accent-color: #8a2be2;
+    --secondary-color: #1dd1a1;
+    --like-color: #ff4757;
+    --muted-color: #666;
+}
+
+/* Apply Variables */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+body.dark-mode .theme-btn {
+    background: linear-gradient(90deg, var(--accent-color), #2575fc);
+}
+
+body.light-mode .theme-btn {
+    background: linear-gradient(90deg, var(--accent-color), #2575fc);
+}
+
+header {
+    background-color: var(--card-color);
+    border-bottom-color: var(--border-color);
+}
+
+.logo-img {
+    border-color: var(--secondary-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
+.nav-link.active {
+    background: linear-gradient(90deg, var(--accent-color), #2575fc);
+}
+
+.mobile-nav-btn {
+    color: var(--text-color);
+}
+
+.mobile-nav-menu {
+    background-color: var(--card-color);
+    border-left-color: var(--border-color);
+}
+
+.mobile-nav-link {
+    color: var(--text-color);
+}
+
+.modal {
+    background-color: var(--card-color);
+}
+
+.modal-header {
+    border-bottom-color: var(--border-color);
+}
+
+.close-btn {
+    color: var(--text-color);
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--border-color);
+    color: var(--text-color);
+}
+
+.light-mode .form-control {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.form-hint {
+    color: var(--muted-color);
+}
+
+.quote-card {
+    background-color: var(--card-color);
+    border-color: var(--border-color);
+}
+
+.quote-meta {
+    border-top-color: var(--border-color);
+}
+
+.quote-date {
+    color: var(--muted-color);
+}
+
+.like-btn {
+    color: var(--muted-color);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.light-mode .like-btn {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.subtagline {
+    color: var(--muted-color);
+}
+
+.channel-card {
+    background-color: var(--card-color);
+    border-color: var(--border-color);
+}
+
+.channel-desc {
+    color: var(--muted-color);
+}
+
+.network-section {
+    background-color: var(--card-color);
+    border-color: var(--border-color);
+}
+
+.category {
+    border-bottom-color: var(--border-color);
+}
+
+.channel-link {
+    color: var(--text-color);
+}
+
+.paradise-footer {
+    border-top-color: var(--border-color);
+}
+
+.empty-state {
+    color: var(--muted-color);
+}
+
+footer {
+    background-color: var(--card-color);
+    border-top-color: var(--border-color);
+}
+
+.copyright {
+    color: var(--muted-color);
+}
