@@ -1,6 +1,6 @@
 # 🌴 Project Paradise – Quotes Web
 
-Project Paradise is a lightweight web application where users can submit their quotes to be published on our official Paradise channel.
+Project Paradise is a lightweight web application where users can submit their quotes to be published on the official Paradise channels.
 
 ## ✨ Features
 - Easy quote submission
@@ -17,15 +17,20 @@ To provide a simple and open platform where anyone can share their thoughts, ide
 - JavaScript
 
 ## 📢 Official Channels
-- **Main Channel:** [PARADISE OF ROMANCE](https://t.me/paradiseofromance)
-- **All Paradise Channels:** [Paradise – All Channels & Updates](https://t.me/ParadisexBackup/7)
+- **Main Channel:** [Paradise of Romance](https://t.me/paradiseofromance)
+- **All Paradise Channels & Updates:** [Paradise Network](https://t.me/ParadisexBackup/7)
 
 ## 👥 Team
 - **Owner:** @NethmiAW  
-- **Co-Owner / DM & Updates:** [JustHIRUU](https://t.me/justhiruu)
+- **Co-Owner / Updates & DM:** [JustHIRUU](https://t.me/justhiruu)
 
 ## 📌 Project Status
 🛠️ Active development
 
-## 🌐 Live Status
-🚀 Coming soon
+## 🌐 Live Preview
+🚀 Coming soon  
+
+Current demo (localhost-style sample build):  
+https://hirugamage.github.io/Project-paradise0.1/
+
+> Note: This is a sample version for testing and layout preview purposes only.
