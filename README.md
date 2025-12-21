@@ -1,5 +1,7 @@
 # 🌴 Project Paradise – Quotes Web
 
+![logo](Project-Paradise.JPG)
+
 Project Paradise is a lightweight web application where users can submit their quotes to be published on the official Paradise channels.
 
 ## ✨ Features
